@@ -370,7 +370,7 @@ h2 {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-.facts dd { margin: 0.1rem 0 0; font-family: var(--serif); font-size: 1.15rem; }
+.facts dd { margin: 0.1rem 0 0; font-family: var(--serif); font-size: 1.15rem; overflow-wrap: anywhere; }
 .dim { color: var(--muted); font-family: var(--sans); font-size: 0.85rem; letter-spacing: 0; }
 .disclaimer { margin: 0; color: var(--muted); font-size: 0.9rem; }
 
@@ -550,8 +550,9 @@ h2 {
   min-width: 0;
   text-align: left;
   font-family: var(--serif);
-  font-size: 1.05rem;
-  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
   color: var(--ink);
 }
 .ca-copy {
