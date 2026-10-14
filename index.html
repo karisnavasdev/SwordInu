@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sword Inu ($SI) — Robinhood Chain</title>
+  <meta name="description" content="Sword Inu ($SI) is a knighted Shiba meme on Robinhood Chain. One sword, one cape, one castle.">
+  <meta name="theme-color" content="#09080b">
+  <link rel="icon" href="assets/shield.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+  <div class="loader" id="loader" role="dialog" aria-label="Sword Inu intro">
+    <aside class="loader-side loader-side-left">
+      <div class="loader-copy">
+        <p class="loader-title">Small Paws. Mighty Sword. Infinite Glory.</p>
+        <p>Every legend begins with a hero. Ours begins with a fearless Shiba Inu carrying a sword powerful enough to change the fate of an entire kingdom.</p>
+      </div>
+    </aside>
+    <div class="loader-stage">
+      <video id="loader-video" src="444.mp4" autoplay muted playsinline preload="auto"></video>
+      <div class="loader-bar">
+        <button type="button" id="loader-sound" aria-pressed="false">Sound</button>
+        <button type="button" id="loader-skip">Enter</button>
+      </div>
+    </div>
+    <aside class="loader-side loader-side-right">
+      <div class="loader-copy">
+        <p class="loader-title">Welcome to Sword Inu</p>
+        <p>A magical world where courage, loyalty, and adventure come together. From ancient castles to legendary battlefields, our tiny warrior is on an epic mission to conquer challenges, unite a fearless community, and become the greatest Inu knight of all time.</p>
+      </div>
+    </aside>
+  </div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top">
+      <img src="assets/shield.png" alt="" width="46" height="52">
+      <span>Sword Inu</span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#lore"><img src="assets/icon_search.png" alt="">Lore</a>
+      <a href="#order"><img src="assets/icon_user.png" alt="">Order</a>
+      <a href="#realm"><img src="assets/icon_home.png" alt="">Realm</a>
+      <a href="#charter"><img src="assets/icon_gear.png" alt="">Charter</a>
+      <a href="#buy"><img src="assets/gem.png" alt="">Buy</a>
+      <a href="#court"><img src="assets/icon_heart.png" alt="">Court</a>
+    </nav>
+    <a class="chain-pill" href="#enter">Robinhood Chain</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <img src="assets/icon_menu.png" alt="" width="28" height="24">
+    </button>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="hero-stage">
+        <img class="art" src="assets/hero.png" alt="A Shiba in silver armor and a red cape raises a glowing sword before a castle at sunrise" width="624" height="396">
+        <img class="pennant" src="assets/pennant.png" alt="" width="90" height="116">
+        <div class="hero-copy">
+          <p class="eyebrow">Robinhood Chain · Chain ID 4663</p>
+          <h1>Sword Inu</h1>
+          <p class="ticker">$SI</p>
+          <p class="lede">A Shiba knighted at dawn. The sword is too big, the cape is too red, and the castle already knows his name.</p>
+          <div class="ctas">
+            <a href="#buy"><img src="assets/btn_start.png" alt="Get Started" width="266" height="60"></a>
+            <a href="#lore"><img src="assets/btn_learn.png" alt="Learn More" width="266" height="66"></a>
+            <a href="#court"><img src="assets/btn_join.png" alt="Join Now" width="266" height="66"></a>
+          </div>
+          <div class="ca-panel">
+            <span class="ca-kicker">CA</span>
+            <code id="ca-value">0xcomingsoon</code>
+            <button type="button" class="ca-copy" data-copy="0xcomingsoon" data-status="ca-status">Copy</button>
+            <span class="ca-status" id="ca-status" role="status"></span>
+          </div>
+          <nav class="socials" aria-label="Sword Inu links">
+            <a href="https://x.com/swordinu_" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://t.me/swordinus" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">DexScreener</a>
+            <a href="https://gmgn.ai/?chain=robinhood" target="_blank" rel="noopener noreferrer">GMGN</a>
+            <a href="#buy">How to Buy</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>$SI · Sword Inu · Robinhood Chain · Chain ID 4663 · ETH gas · EVM · Dawn Keep · </span>
+        <span>$SI · Sword Inu · Robinhood Chain · Chain ID 4663 · ETH gas · EVM · Dawn Keep · </span>
+      </div>
+    </div>
+
+    <section class="oath-wrap">
+      <blockquote class="oath">
+        <p>He raised the sword because the morning asked him to.</p>
+      </blockquote>
+    </section>
+
+    <section class="section lore" id="lore">
+      <div class="section-kicker">
+        <img src="assets/icon_search.png" alt="" width="28" height="28">
+        <span>The tale</span>
+      </div>
+      <div class="lore-grid">
+        <figure class="frame portrait-frame">
+          <img src="assets/portrait.png" alt="Close portrait of Sword Inu in plate armor, both paws on a glowing sword" width="344" height="396">
+        </figure>
+        <div class="lore-copy">
+          <h2>Born where the sun hits the keep.</h2>
+          <p>Before the banners were hung, a Shiba climbed the rock in armor that clinked like a pocketful of coins. The blade caught the sunrise. The red cape did the rest. Someone in the valley shouted a name, and it stuck.</p>
+          <p><strong>Sword Inu.</strong> Ticker <strong>$SI</strong>. Home network, <strong>Robinhood Chain</strong> — a permissionless Ethereum Layer 2, with ETH for gas and the same wallets you already use.</p>
+          <p class="quiet">He is not a brokerage, not a stock token, and not affiliated with Robinhood. He is a meme with a castle, and the gate is open.</p>
+          <figure class="frame balcony-frame">
+            <img src="assets/balcony.png" alt="Sword Inu rests on a stone balcony, cape over the parapet, castle in the valley beyond" width="543" height="396">
+            <figcaption>From the high wall, the realm looks smaller than the cape.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section order" id="order">
+      <div class="section-head">
+        <div class="section-kicker">
+          <img src="assets/icon_user.png" alt="" width="28" height="28">
+          <span>The order</span>
+        </div>
+        <h2>Six moods. One knight.</h2>
+        <p>Every pose is the same dog. The cape just has range.</p>
+      </div>
+      <ul class="knight-grid">
+        <li class="knight">
+          <img src="assets/dog_raise.png" alt="Sword Inu standing, sword lifted to the sky" width="214" height="270">
+          <h3>The Raising</h3>
+          <p>Oath at first light.</p>
+        </li>
+        <li class="knight">
+          <img src="assets/dog_guard.png" alt="Sword Inu holding the sword upright in both paws" width="188" height="270">
+          <h3>The Watch</h3>
+          <p>Blade close. Eyes up.</p>
+        </li>
+        <li class="knight">
+          <img src="assets/dog_sit.png" alt="Sword Inu seated in armor, cape pooled beside him" width="216" height="260">
+          <h3>The Vigil</h3>
+          <p>Patience, plated.</p>
+        </li>
+        <li class="knight">
+          <img src="assets/dog_run.png" alt="Sword Inu charging, cape flying, sword pointed ahead" width="326" height="263">
+          <h3>The Charge</h3>
+          <p>Cape first, then thunder.</p>
+        </li>
+        <li class="knight">
+          <img src="assets/dog_happy.png" alt="Sword Inu grinning with eyes closed, still in full armor" width="189" height="240">
+          <h3>The Grin</h3>
+          <p>Victory is a face.</p>
+        </li>
+        <li class="knight">
+          <img src="assets/dog_sleep.png" alt="Sword Inu asleep under the red cape, helmet set aside" width="150" height="136">
+          <h3>The Rest</h3>
+          <p>Even knights nap.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section realm" id="realm">
+      <div class="section-head">
+        <div class="section-kicker">
+          <img src="assets/icon_home.png" alt="" width="28" height="28">
+          <span>The realm</span>
+        </div>
+        <h2>Three views of the same castle.</h2>
+      </div>
+      <div class="realm-grid">
+        <article class="scene">
+          <img src="assets/castle_sunset.png" alt="A white castle on a green hill at sunset, sun low over the water" width="401" height="172">
+          <div>
+            <h3>Dawn Keep</h3>
+            <p>Where the sword caught the sun and the name was shouted up the hill.</p>
+          </div>
+        </article>
+        <article class="scene">
+          <img src="assets/castle_night.png" alt="The castle at night under a full moon, windows lit gold" width="385" height="188">
+          <div>
+            <h3>Moonlit Crown</h3>
+            <p>After the watch begins, every window stays a small coin of light.</p>
+          </div>
+        </article>
+        <article class="scene">
+          <img src="assets/terrace.png" alt="A stone terrace with red paw banners looking over a river toward distant mountains" width="400" height="188">
+          <div>
+            <h3>High Terrace</h3>
+            <p>Paw banners, river mist, and the long view the knight refuses to rush.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section charter" id="charter">
+      <div class="section-head">
+        <div class="section-kicker">
+          <img src="assets/icon_gear.png" alt="" width="28" height="28">
+          <span>The charter</span>
+        </div>
+        <h2>What $SI actually is.</h2>
+        <p>A meme on Robinhood Chain. The contract address is <strong>0xcomingsoon</strong>.</p>
+      </div>
+      <ul class="medallions">
+        <li>
+          <img src="assets/coin_paw.png" alt="" width="110" height="100">
+          <h3>The pack</h3>
+          <p>A community meme. The paw is the seal, not a promise of price.</p>
+        </li>
+        <li>
+          <img src="assets/coin_crown.png" alt="" width="92" height="95">
+          <h3>The name</h3>
+          <p>Sword Inu. Ticker $SI. Say it like a title, not a shortcut.</p>
+        </li>
+        <li>
+          <img src="assets/coin_compass.png" alt="" width="95" height="91">
+          <h3>The road</h3>
+          <p>Robinhood Chain. Chain ID 4663. An Ethereum Layer 2.</p>
+        </li>
+        <li>
+          <img src="assets/gem.png" alt="" width="88" height="104">
+          <h3>The gas</h3>
+          <p>Fees are paid in ETH, the same as on Ethereum.</p>
+        </li>
+      </ul>
+
+      <div class="facts">
+        <dl>
+          <div><dt>Name</dt><dd>Sword Inu</dd></div>
+          <div><dt>Ticker</dt><dd>$SI</dd></div>
+          <div><dt>Network</dt><dd>Robinhood Chain</dd></div>
+          <div><dt>Chain ID</dt><dd>4663 <span class="dim">· 0x1237</span></dd></div>
+          <div><dt>Gas token</dt><dd>ETH</dd></div>
+          <div><dt>Standard</dt><dd>EVM</dd></div>
+          <div><dt>Contract</dt><dd>0xcomingsoon</dd></div>
+          <div><dt>Affiliation</dt><dd>Independent meme</dd></div>
+        </dl>
+        <p class="disclaimer">Sword Inu is not affiliated with Robinhood Markets, and it is not a stock token, a fund, or an offer to sell a security. Robinhood Chain itself is a public network and is separate from Robinhood brokerage accounts. Nothing on this page is financial advice.</p>
+      </div>
+    </section>
+
+    <section class="section enter" id="enter">
+      <div class="section-head">
+        <div class="section-kicker">
+          <img src="assets/coin_compass.png" alt="" width="36" height="36">
+          <span>Enter the chain</span>
+        </div>
+        <h2>Get to the gate.</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <span>01</span>
+          <h3>Open a wallet</h3>
+          <p>Robinhood Wallet speaks the chain natively. Any other EVM wallet can add it by hand.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <h3>Add Robinhood Chain</h3>
+          <p>Chain ID 4663. Gas is ETH. If a wallet is connected, the button below asks it to add the network. Otherwise it copies the RPC.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <h3>Copy the contract</h3>
+          <p>The address is <strong>0xcomingsoon</strong>. Look it up on the Robinhood Chain boards at <a href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">DexScreener</a> or <a href="https://gmgn.ai/?chain=robinhood" target="_blank" rel="noopener noreferrer">GMGN</a>.</p>
+        </li>
+      </ol>
+
+      <div class="net-card">
+        <div class="net-row">
+          <div>
+            <p class="label">Network</p>
+            <p class="value">Robinhood Chain</p>
+          </div>
+          <button type="button" data-copy="Robinhood Chain">Copy</button>
+        </div>
+        <div class="net-row">
+          <div>
+            <p class="label">Chain ID</p>
+            <p class="value">4663</p>
+          </div>
+          <button type="button" data-copy="4663">Copy</button>
+        </div>
+        <div class="net-row">
+          <div>
+            <p class="label">RPC</p>
+            <p class="value">https://rpc.mainnet.chain.robinhood.com</p>
+          </div>
+          <button type="button" data-copy="https://rpc.mainnet.chain.robinhood.com">Copy</button>
+        </div>
+        <div class="net-row">
+          <div>
+            <p class="label">Explorer</p>
+            <p class="value">robinhoodchain.blockscout.com</p>
+          </div>
+          <a class="text-link" href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener noreferrer">Open</a>
+        </div>
+        <div class="net-actions">
+          <button type="button" class="gold-btn" id="add-chain">Add Robinhood Chain</button>
+          <a class="text-link" href="https://docs.robinhood.com/chain/" target="_blank" rel="noopener noreferrer">Chain docs</a>
+          <a class="text-link" href="https://robinhood.com/us/en/chain/" target="_blank" rel="noopener noreferrer">About the network</a>
+        </div>
+        <p class="net-note" id="net-note" role="status"></p>
+      </div>
+    </section>
+
+    <section class="section buy" id="buy">
+      <div class="section-head">
+        <div class="section-kicker">
+          <img src="assets/gem.png" alt="" width="28" height="28">
+          <span>How to buy</span>
+        </div>
+        <h2>Four steps to the sword.</h2>
+        <p>Hold a little ETH for gas on Robinhood Chain, then use the contract below.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span>01</span>
+          <h3>Add the chain</h3>
+          <p>Robinhood Wallet, or any EVM wallet. Chain ID 4663. RPC <span class="dim">rpc.mainnet.chain.robinhood.com</span>.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <h3>Copy the CA</h3>
+          <p>The contract is <strong>0xcomingsoon</strong>. Copy it from the panel, then paste it into the swap or the chart.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <h3>Open a chart</h3>
+          <p>Find $SI on the Robinhood Chain boards at DexScreener or GMGN, confirm the contract matches, and swap with ETH for gas.</p>
+        </li>
+        <li>
+          <span>04</span>
+          <h3>Join the court</h3>
+          <p>The hall is on <a href="https://x.com/swordinu_" target="_blank" rel="noopener noreferrer">X</a> and <a href="https://t.me/swordinus" target="_blank" rel="noopener noreferrer">Telegram</a>.</p>
+        </li>
+      </ol>
+      <div class="ca-panel ca-panel-block">
+        <span class="ca-kicker">CA</span>
+        <code>0xcomingsoon</code>
+        <button type="button" class="ca-copy" data-copy="0xcomingsoon" data-status="buy-ca-status">Copy</button>
+        <span class="ca-status" id="buy-ca-status" role="status"></span>
+      </div>
+      <nav class="socials socials-left" aria-label="Buy and community links">
+        <a href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">DexScreener</a>
+        <a href="https://gmgn.ai/?chain=robinhood" target="_blank" rel="noopener noreferrer">GMGN</a>
+        <a href="https://x.com/swordinu_" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://t.me/swordinus" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="#enter">Add chain</a>
+      </nav>
+    </section>
+
+    <section class="section road" id="road">
+      <div class="road-layout">
+        <div>
+          <div class="section-kicker">
+            <img src="assets/coin_compass.png" alt="" width="28" height="28">
+            <span>The road</span>
+          </div>
+          <h2>From sketch to keep.</h2>
+          <ol class="phases">
+            <li>
+              <h3>I · The Forge</h3>
+              <p>The knight, the castle, the name, the ticker. This gate is that work.</p>
+            </li>
+            <li>
+              <h3>II · The Knighting</h3>
+              <p>Deploy $SI on Robinhood Chain and publish the contract in the open, where the explorer can see it.</p>
+            </li>
+            <li>
+              <h3>III · The Realm</h3>
+              <p>A court worth gathering in. More of the castle. Listings only where they are real.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="road-art">
+          <figure>
+            <img src="assets/chest.png" alt="A wooden treasure chest bound in gold, with a blue gem in the lock" width="164" height="106">
+            <figcaption>The chest stays shut until the contract is real.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/scroll.png" alt="A parchment scroll tied with a red ribbon and a paw seal" width="191" height="106">
+            <figcaption>The charter, sealed with a paw.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section court" id="court">
+      <div class="court-layout">
+        <div>
+          <div class="section-kicker">
+            <img src="assets/icon_heart.png" alt="" width="28" height="28">
+            <span>The court</span>
+          </div>
+          <h2>Come up the hill.</h2>
+          <p>The contract is <strong>0xcomingsoon</strong>. The court gathers on X and Telegram.</p>
+          <img class="chat" src="assets/chat.png" alt="A message slip with Sword Inu’s armored face" width="300" height="86">
+          <nav class="socials socials-left" aria-label="Court links">
+            <a href="https://x.com/swordinu_" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://t.me/swordinus" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">DexScreener</a>
+            <a href="https://gmgn.ai/?chain=robinhood" target="_blank" rel="noopener noreferrer">GMGN</a>
+            <a href="#buy">How to Buy</a>
+          </nav>
+          <div class="ctas court-ctas">
+            <a href="#enter"><img src="assets/btn_start.png" alt="Get Started" width="266" height="60"></a>
+            <a href="#top"><img src="assets/btn_join.png" alt="Join Now" width="266" height="66"></a>
+          </div>
+        </div>
+        <figure class="frame court-portrait">
+          <img src="assets/dog_happy.png" alt="Sword Inu smiling in armor" width="189" height="240">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="assets/shield.png" alt="" width="42" height="48">
+      <div>
+        <strong>Sword Inu</strong>
+        <span>$SI · Robinhood Chain</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="https://x.com/swordinu_" target="_blank" rel="noopener noreferrer">X</a>
+      <a href="https://t.me/swordinus" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">DexScreener</a>
+      <a href="https://gmgn.ai/?chain=robinhood" target="_blank" rel="noopener noreferrer">GMGN</a>
+      <a href="#buy">How to Buy</a>
+      <p>Independent meme. Not financial advice. Not affiliated with Robinhood Markets. Robinhood Chain is a public Ethereum Layer 2 and is separate from Robinhood brokerage and crypto accounts. Contract: 0xcomingsoon.</p>
+    </div>
+    <img class="footer-sleep" src="assets/dog_sleep.png" alt="" width="150" height="136">
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
